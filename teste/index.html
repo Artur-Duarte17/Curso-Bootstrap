@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aula Bootstrap — Metodologia Copia & Vê</title>
+
+  <!-- Bootstrap CSS (CDN) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+  <!-- Bootstrap Icons (CDN) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <div>
+      <a href="#inicio">
+        <i class="bi bi-bootstrap-fill me-1"></i> Brand
+      </a>
+
+      <button type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-expanded="false">
+        <span></span>
+      </button>
+
+      <div id="menu">
+        <ul>
+          <li>
+            <a href="#grid">
+              <i class="bi bi-grid me-1"></i> Grid
+            </a>
+          </li>
+          <li>
+            <a href="#imagens">
+              <i class="bi bi-image me-1"></i> Imagens
+            </a>
+          </li>
+          <li>
+            <a href="#forms">
+              <i class="bi bi-ui-checks me-1"></i> Forms
+            </a>
+          </li>
+          <li>
+            <a href="#extras">
+              <i class="bi bi-stars me-1"></i> Extras
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header id="inicio">
+    <div>
+      <h1>Bootstrap: cola a classe e vê a mágica</h1>
+      <p>Grid, Navbar, Imagens e Forms — direto ao ponto, sem CSS extra.</p>
+      <a href="#grid">
+        <i class="bi bi-play-fill me-1"></i> Começar
+      </a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- GRID -->
+    <section id="grid">
+      <h2>
+        <i class="bi bi-grid-3x3-gap-fill me-2"></i>
+        Grid (12 colunas, mobile-first)
+      </h2>
+
+      <!-- 3 blocos -->
+      <div>
+        <div>
+          <div>A</div>
+        </div>
+        <div>
+          <div>B</div>
+        </div>
+        <div>
+          <div>C</div>
+        </div>
+      </div>
+
+      <!-- Sidebar + conteúdo -->
+      <div>
+        <aside>
+          <div>
+            <i class="bi bi-list me-1"></i> Sidebar
+          </div>
+        </aside>
+        <article>
+          <div>Conteúdo principal</div>
+        </article>
+      </div>
+    </section>
+
+    <!-- IMAGENS -->
+    <section id="imagens">
+      <h2>
+        <i class="bi bi-image-fill me-2"></i>
+        Imagens
+      </h2>
+
+      <!-- Imagem responsiva -->
+      <div>
+        <div>
+          <p>Use <code>.img-fluid</code> para a imagem se adaptar ao container.</p>
+        </div>
+        <div>
+          <img src="https://picsum.photos/900/600" alt="Exemplo responsivo">
+        </div>
+      </div>
+
+      <!-- Mini galeria com razão 16:9 -->
+      <div>
+        <div>
+          <img src="https://picsum.photos/600/400?1" alt="thumb 1">
+        </div>
+        <div>
+          <img src="https://picsum.photos/600/400?2" alt="thumb 2">
+        </div>
+        <div>
+          <img src="https://picsum.photos/600/400?3" alt="thumb 3">
+        </div>
+      </div>
+    </section>
+
+    <!-- FORMS -->
+    <section id="forms">
+      <h2>
+        <i class="bi bi-envelope-paper-fill me-2"></i>
+        Contato
+      </h2>
+
+      <form novalidate>
+        <!-- Email -->
+        <div>
+          <label for="email">Email</label>
+          <div>
+            <span>@</span>
+            <input id="email" type="email" placeholder="voce@email.com" required>
+            <div>Informe um email válido.</div>
+          </div>
+        </div>
+
+        <!-- Mensagem -->
+        <div>
+          <label for="msg">Mensagem</label>
+          <textarea id="msg" rows="4" required></textarea>
+          <div>Digite sua mensagem.</div>
+        </div>
+
+        <!-- Aceite -->
+        <div>
+          <input type="checkbox" id="termos" required>
+          <label for="termos">Aceito os termos</label>
+          <div>Você deve aceitar os termos.</div>
+        </div>
+
+        <button>
+          <i class="bi bi-send-fill me-1"></i> Enviar
+        </button>
+      </form>
+    </section>
+
+    <!-- EXTRAS -->
+    <section id="extras">
+      <h2>
+        <i class="bi bi-stars me-2"></i>
+        Extras
+      </h2>
+
+      <!-- Buttons -->
+      <div>
+        <a href="#">
+          <i class="bi bi-lightning-charge-fill me-1"></i> Primário
+        </a>
+        <a href="#">
+          <i class="bi bi-magic me-1"></i> Outline
+        </a>
+        <a href="#">
+          <i class="bi bi-sliders me-1"></i> Pequeno
+        </a>
+      </div>
+
+      <!-- Alert -->
+      <div role="alert">
+        <i class="bi bi-exclamation-triangle-fill me-2"></i>
+        Este é um alerta simples — troque por <code>alert-success</code> ou <code>alert-danger</code>.
+      </div>
+
+      <!-- Table -->
+      <div>
+        <table>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Plano</th>
+              <th>Preço</th>
+              <th>Ação</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Starter</td>
+              <td>R$ 0</td>
+              <td><a href="#"><i class="bi bi-info-circle me-1"></i> Detalhes</a></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Pro</td>
+              <td>R$ 49</td>
+              <td><a href="#"><i class="bi bi-bag-plus me-1"></i> Assinar</a></td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Enterprise</td>
+              <td>R$ 199</td>
+              <td><button disabled><i class="bi bi-telephone-fill me-1"></i> Contato</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div>
+      © 2025 — Aula Bootstrap (Metodologia Copia & Vê)
+      <span>•</span>
+      <i class="bi bi-heart-fill"></i>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS (bundle com Popper) -->
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Validação simples (nativa + classes Bootstrap) -->
+  <script>
+    (() => {
+      const forms = document.querySelectorAll('.needs-validation');
+      forms.forEach(form => {
+        form.addEventListener('submit', (e) => {
+          if (!form.checkValidity()) {
+            e.preventDefault();
+            e.stopPropagation();
+          }
+          form.classList.add('was-validated');
+        });
+      });
+    })();
+  </script>
+</body>
+
+</html>
